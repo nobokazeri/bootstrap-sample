@@ -29,7 +29,7 @@ gulp.task('ejs', () => {
   return gulp
     .src('./src/html/*.ejs')
     .pipe(ejs({}, {}, ejsSettingOption))
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('./'))
 })
 
 gulp.task('watch', () => {
