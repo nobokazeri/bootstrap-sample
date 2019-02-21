@@ -1,0 +1,46 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+  <!-- sub component -->
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Bootstrap Sample</a>
+    <!-- button -->
+    <%- include('../atoms/menu-toggle') %>
+
+    <!-- navigation -->
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <!-- navigation menu -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">top <span class="sr-only">(current)</span></a>
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#topbanner">photo</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#news">news</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contents">contents</a>
+        </li>
+        
+        <!-- dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">shop</a>
+            <a class="dropdown-item" href="#">access</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link btn btn-info">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- sub component -->
+</nav>
+<!-- navbar -->
