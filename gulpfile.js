@@ -1,27 +1,14 @@
 const gulp = require('gulp')
 const ejs = require("gulp-ejs")
 const sass = require('gulp-sass')
-const postcss = require('gulp-postcss')
-const autoprefixer = require('autoprefixer')
-const flexBugsFixes = require('postcss-flexbugs-fixes')
-
-const autoprefixerOption = {
-  grid: true
-}
-
-const postcssOption = [
-  flexBugsFixes,
-  autoprefixer(autoprefixerOption)
-]
 
 const ejsSettingOption = {
   ext: '.html'
 }
 
 gulp.task('sass', () => {
-  return gulp.src('./src/scss/common.scss')
+  return gulp.src('./src/sass/custom.scss')
     .pipe(sass())
-    .pipe(postcss(postcssOption))
     .pipe(gulp.dest('./public'))
 })
 

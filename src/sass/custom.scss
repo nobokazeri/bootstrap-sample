@@ -1,0 +1,14 @@
+@import "../../scss/bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+$enable-gradients: true;
+$grid-gutter-width: 28px;
+
+.carousel-caption {
+  color: $gray-700;
+  text-shadow: $close-text-shadow;
+}
+
+body {
+  font-family: 'Oswald', sans-serif !important;
+}
